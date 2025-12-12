@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="/static/otp.css">
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Verification</h2>
+        <form method="POST">
+            <input type="text" name="mobile" placeholder="Enter mobile number" required>
+            <button type="submit" name="send">Send OTP</button>
+            <br><br>
+            <input type="text" name="otp" placeholder="Enter OTP">
+            <button type="submit" name="verify">Verify OTP</button>
+        </form>
+        <p class="error">{{ error }}</p>
+    </div>
+</body>
+</html>
